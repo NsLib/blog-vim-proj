@@ -1,1 +1,12 @@
-" 请查看分支
+
+"set lines=60 columns=220            " 设置行、列
+"
+colorscheme desertEx_256
+
+"{{{标尺相关
+"set cursorcolumn                    " 高亮显示列
+set textwidth=80                    " 插入文本的最大宽度
+set scrolloff=15                    " 光标上下两侧最少保留的屏幕行数
+set cc=+1                           " 是否显示标尺
+hi ColorColumn ctermfg=White ctermbg=Grey   " 标尺颜色
+"}}}
