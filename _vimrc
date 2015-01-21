@@ -8,6 +8,10 @@
 " Vim Settings
 "===============================================================================
 
+"{{{ start pathogen
+execute pathogen#infect()
+"}}}
+
 "{{{ 基本设置
 set nocompatible        " 不兼容老得VI，除非有特殊的理由
 "}}}
