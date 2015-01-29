@@ -108,6 +108,9 @@ autocmd BufReadPost * if line("'\"") > 1
 "===============================================================================
 " Plugins
 "===============================================================================
+"{{{ tasklist.vim  任务列表插件
+let g:tlTokenList = ["FIXME", "TODO", "HACK", "NOTE", "WARN", "MODIFY"]
+"}}}
 
 "===============================================================================
 " Key Binding
@@ -135,6 +138,9 @@ inoremap    <c-h>               <left>
 inoremap    <c-l>               <right>
 inoremap    <c-j>               <c-o>gj
 inoremap    <c-k>               <c-o>gk
+
+" 绑定快捷键，默认是 <Leader>t
+nnoremap    ,td                 :TaskList<CR>
 
 "===============================================================================
 " Source User's Own Setting
