@@ -109,6 +109,17 @@ autocmd BufReadPost * if line("'\"") > 1
 " Plugins
 "===============================================================================
 
+"{{{ calendar.vim 日历插件
+" 日期格式 year-month-day
+let g:calendar_date_endian      = "big"
+" 日期分隔符
+let g:calendar_date_separator   = "-"
+" 打开日历时的视图
+let g:calendar_view             = "day"
+" 设置View布局
+let g:calendar_views            = ['year', 'day', 'month', 'week', 'clock', 'days']
+"}}}
+
 "===============================================================================
 " Key Binding
 "===============================================================================
