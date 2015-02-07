@@ -4,6 +4,38 @@
 
 priority -50
 
+snippet ife "这里是代码片段的描述"
+if (${1:/* 默认显示的内容 */}) {
+    ${2:/* stat */}
+} else {
+    ${3}
+}
+${0:/* 占位符0最后才会切换到 */}
+endsnippet
+
+snippet tmp "std c"
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, const char *argv[])
+{
+    ${1}
+    return 0;
+}
+endsnippet
+
+snippet tmp "*nix c"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, const char *argv[])
+{
+    ${1}
+    return 0;
+}
+endsnippet
+
 snippet def "#define ..."
 #define ${1}
 endsnippet
